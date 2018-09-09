@@ -144,6 +144,9 @@ x-sign:nth-of-type(1) {
   //background: #ff3200;
   background: #f44336;
   color: #fff;
+  p {
+    padding: 10px;
+  }
 }
 
 .mint-button--danger {
@@ -162,7 +165,7 @@ x-sign:nth-of-type(1) {
 }
 .glow-box {
   background-color: #f44336;
-  height: 800px;
+  height: 400px;
 }
 h1 {
   position: fixed;
@@ -192,7 +195,7 @@ h1 {
 #candle {
   position: absolute;
   left: calc(50% - 0.75em);
-  bottom: 35%;
+  bottom: 29%;
   width: 1.5em;
   height: 10em;
   overflow: hidden;
