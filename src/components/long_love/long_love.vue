@@ -6,12 +6,15 @@
                 <mt-button icon="back">返回</mt-button>
             </router-link>
          </mt-header>
-
-         <div class="chest">
+<div style="    width: 100%;
+    overflow: hidden;">
+ <div class="chest">
                 <div class="heart left side top"></div>
                 <div class="heart center"></div>
                 <div class="heart right side"></div>
         </div>
+</div>
+        
         <div class="title">
             <p id="title-word" >我今年的生日愿望：能够明年的今天我们准备婚事~~你的愿望我相信也能实现，未来的每一天我们都要健健康康的，相爱每一天。</p>
              
@@ -85,7 +88,7 @@ export default {
   height: 500px;
   margin: 0 auto;
   position: relative;
-  left: -50px;
+  left: -41px;
   background: #000;
 }
 
