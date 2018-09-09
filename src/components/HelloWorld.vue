@@ -9,6 +9,7 @@
       <mt-swipe-item><img src="../assets/images/love_zly4.jpg" alt=""></mt-swipe-item>
       <mt-swipe-item><img src="../assets/images/love_zly5.jpg" alt=""></mt-swipe-item>
       <mt-swipe-item><img src="../assets/images/love_zly6.jpg" alt=""></mt-swipe-item>
+      <mt-swipe-item><img src="../assets/images/love_zly7.jpg" alt=""></mt-swipe-item>
     </mt-swipe>
    </div>
     <div class="flex-center  fix-btn" >
@@ -42,7 +43,7 @@ export default {
   },
   methods: {
     get_love() {
-      this.$router.push({ path: "/love" });
+      this.$router.push({ path: "/long" });
     }
   }
 };
@@ -128,7 +129,7 @@ export default {
   -moz-transform: rotate(-15deg);
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
-      text-shadow: 0 0 20px #26a2ff;
+  text-shadow: 0 0 20px #26a2ff;
 }
 .message:fisrt-child {
   text-indent: 1em;

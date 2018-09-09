@@ -8,9 +8,9 @@
          </mt-header>
          <iframe class="iframe1" src=" https://liutao19910728.github.io/iframe1/" frameborder="0"></iframe>
 
-    <div class="flex-center  fix-btn"  style="position: fixed" >
+    <!-- <div class="flex-center  fix-btn"  style="position: fixed" >
        <mt-button type="danger" @click.native="get_long()" >next</mt-button>
-    </div>
+    </div> -->
 
 </div>
 
@@ -20,7 +20,9 @@
 
 <script>
 export default {
-  data() {},
+  data() {
+    return {};
+  },
   methods: {
     get_long() {
       this.$router.push({ path: "/long" });
@@ -42,7 +44,7 @@ export default {
 }
 .iframe1 {
   width: 100%;
-  height: 100%;
+  height: 800px;
 }
 .mint-header {
   background: #000;

@@ -1,7 +1,7 @@
 <template>
     <div>
          <mt-header fixed title="芸宝生日快乐">
-             <router-link to="/" slot="left">
+             <router-link to="/long" slot="left">
                 <mt-button icon="back">返回</mt-button>
             </router-link>
          </mt-header>
@@ -28,9 +28,9 @@
          
     
          <div class="glow-box">
-            <x-sign>
+            <div   class="x-sign">
              真的有很多话想说...<br/>异地恋虽难熬，熬过去就是一生了~~
-            </x-sign>
+            </div>
           
 <div id="glow" class="glow"></div>
 <div id="candle">
@@ -58,6 +58,8 @@ import $ from "jquery";
 export default {
   mounted() {
     console.log($("#flame"));
+    console.log(wx);
+
     $("#flame").on(this.show());
   },
   data() {
@@ -75,7 +77,7 @@ export default {
         $(this).addClass("puff-bubble");
       });
       $("#glow").remove();
-      $("x-sign")
+      $(".x-sign")
         .hide()
         .delay(750)
         .fadeIn(300);
@@ -86,11 +88,6 @@ export default {
         1000
       );
       $("#glow").remove();
-      txt
-        .hide()
-        .html("It <b>will</b> come true..")
-        .delay(750)
-        .fadeIn(300);
       $("#content-p")
         .hide()
         .delay(800)
@@ -105,7 +102,7 @@ export default {
 
 
 <style lang="scss" scoped>
-x-sign {
+.x-sign {
   --interval: 1s;
   display: block;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
@@ -114,7 +111,7 @@ x-sign {
   filter: saturate(60%);
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
-x-sign:nth-of-type(1) {
+.x-sign:nth-of-type(1) {
   color: azure;
   --color1: azure;
   --color2: aqua;
@@ -195,7 +192,7 @@ h1 {
 #candle {
   position: absolute;
   left: calc(50% - 0.75em);
-  top:50%;
+  top: 50%;
   width: 1.5em;
   height: 10em;
   overflow: hidden;
