@@ -163,6 +163,7 @@ export default {
 .glow-box {
   background-color: #f44336;
   height: 400px;
+  position: relative;
 }
 h1 {
   position: fixed;
@@ -192,7 +193,7 @@ h1 {
 #candle {
   position: absolute;
   left: calc(50% - 0.75em);
-  top: 60%;
+  top: 2%;
   width: 1.5em;
   height: 10em;
   overflow: hidden;
