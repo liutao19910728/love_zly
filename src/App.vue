@@ -20,14 +20,19 @@
 export default {
   mounted() {
     this.play();
-   
-    
+    this.autoPlayAudio();
   },
   name: "App",
 
   methods: {
     play() {
-      document.getElementById("music").play();
+      // document.getElementById("music").play();
+      document.addEventListener("DOMContentLoaded", function() {
+        function audioAutoPlay() {
+          document.getElementById("music").play();
+        }
+        audioAutoPlay();
+      });
     },
     autoPlayAudio() {
       wx.config({

@@ -42,7 +42,7 @@ export default {
 }
 .iframe1 {
   width: 100%;
-  height: 800px;
+  height: 400px;
 }
 .mint-header {
   background: #000;
