@@ -2,7 +2,7 @@
   <div>
   <mt-header fixed title="芸宝生日快乐"></mt-header>
    <div class="swipe-box">
-      <mt-swipe :auto="4000">
+      <mt-swipe :auto="2000">
       <mt-swipe-item><img src="../assets/images/love_zly1.jpg" alt=""></mt-swipe-item>
       <mt-swipe-item><img src="../assets/images/love_zly2.jpg" alt=""></mt-swipe-item>
       <mt-swipe-item><img src="../assets/images/love_zly3.jpg" alt=""></mt-swipe-item>
@@ -128,6 +128,7 @@ export default {
   -moz-transform: rotate(-15deg);
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
+      text-shadow: 0 0 20px #26a2ff;
 }
 .message:fisrt-child {
   text-indent: 1em;

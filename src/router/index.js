@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Love from "@/components/love_zly/love_zly"
 import Miss from "@/components/miss_zly/miss_zly"
+import Long from "@/components/long_love/long_love"
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       name: 'Miss',
       component: Miss
 
+    },
+    {
+      path: '/long',
+      name: 'Long',
+      component: Long
     }
   ]
 })

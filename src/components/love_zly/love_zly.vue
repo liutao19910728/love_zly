@@ -5,17 +5,33 @@
                 <mt-button icon="back">返回</mt-button>
             </router-link>
          </mt-header>
+          <div  id="content-p"  class="content-p">
+            <p>最近我们经历一个砍...... <br/> 
+            可是正是因为这个砍，让我知道以后该怎么去珍惜你 <br/>
+             我知道未来还有一些挫折，只要我们同心，没有什么过不去的<br>
+             失去你我感觉我这辈子都遇不到这么好的女孩子了， <br>
+             你若不放弃，我坚决不会放弃 <br>
+             不到万不得已，我也坚决不会放弃你  <br>
+             无论外界怎么看待，只要我们自己活得开心 <br>
+               只要我们自己家人活得开心，别人的闲言闲语，我不在乎 <br>
+               未来请看我的表现，你的父母就是我的父母 <br>
+               我会真心把他们看待成最尊敬的人 <br> 
 
+               <br> <br>
+            <span  style="font-size:25px">我爱你</span> 
+            </p>
+           
+          </div>
           <div class="flex-center  fix-btn"  >
                  <mt-button type="danger" @click.native="get_miss()" >next</mt-button>
          </div>
          
     
          <div class="glow-box">
-           <h1>
-   
-  真的有很多话想说...<br/>异地恋虽难熬，熬过去就是一生！
-</h1>
+            <x-sign>
+             真的有很多话想说...<br/>异地恋虽难熬，熬过去就是一生了~~
+            </x-sign>
+          
 <div id="glow" class="glow"></div>
 <div id="candle">
     <div class="stripe"></div>
@@ -38,6 +54,7 @@
 
 <script>
 import $ from "jquery";
+
 export default {
   mounted() {
     console.log($("#flame"));
@@ -58,16 +75,26 @@ export default {
         $(this).addClass("puff-bubble");
       });
       $("#glow").remove();
-      $("h1")
+      $("x-sign")
         .hide()
         .delay(750)
         .fadeIn(300);
       $("#candle").animate(
         {
-          opacity: ".5"
+          opacity: "0.5"
         },
-        200
+        1000
       );
+      $("#glow").remove();
+      txt
+        .hide()
+        .html("It <b>will</b> come true..")
+        .delay(750)
+        .fadeIn(300);
+      $("#content-p")
+        .hide()
+        .delay(800)
+        .fadeIn(400);
     },
     get_miss() {
       this.$router.push({ path: "/miss" });
@@ -78,6 +105,47 @@ export default {
 
 
 <style lang="scss" scoped>
+x-sign {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
+    0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+x-sign:nth-of-type(1) {
+  color: azure;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+  font-family: Sriracha;
+  position: fixed;
+  margin: 0 auto;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  width: 12em;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Sacramento";
+  letter-spacing: 0.1em;
+  color: white;
+  opacity: 0.8;
+}
+.content-p {
+  font-size: 16px;
+  margin-top: 40px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de,
+    0 0 70px #ff00de;
+  width: 100%;
+  text-align: center;
+  //background: #ff3200;
+  background: #f44336;
+  color: #fff;
+}
+
 .mint-button--danger {
   color: #fff;
   background-color: #f44336;
@@ -85,7 +153,7 @@ export default {
 }
 .fix-btn {
   position: fixed;
-  left:80%;
+  left: 80%;
   bottom: 26%;
   z-index: 9999;
 }

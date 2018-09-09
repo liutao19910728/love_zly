@@ -6,7 +6,6 @@ import router from './router'
 import './assets/css/base.css'
 
 
-
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
