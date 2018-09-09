@@ -192,7 +192,7 @@ h1 {
 #candle {
   position: absolute;
   left: calc(50% - 0.75em);
-  top: 50%;
+  top: 60%;
   width: 1.5em;
   height: 10em;
   overflow: hidden;
