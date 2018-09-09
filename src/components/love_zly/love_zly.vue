@@ -1,13 +1,13 @@
 <template>
     <div>
-         <mt-header fixed title="张丽芸生日快乐">
+         <mt-header fixed title="芸宝生日快乐">
              <router-link to="/" slot="left">
                 <mt-button icon="back">返回</mt-button>
             </router-link>
          </mt-header>
 
           <div class="flex-center  fix-btn"  >
-                 <mt-button type="danger" @click.native="get_miss()" >下面还有哦</mt-button>
+                 <mt-button type="danger" @click.native="get_miss()" >next</mt-button>
          </div>
          
     
@@ -78,17 +78,22 @@ export default {
 
 
 <style lang="scss" scoped>
+.mint-button--danger {
+  color: #fff;
+  background-color: #f44336;
+  box-shadow: 1px 2px 5px #888888;
+}
 .fix-btn {
   position: fixed;
-  left: 35%;
-  bottom: 80%;
+  left:80%;
+  bottom: 26%;
   z-index: 9999;
 }
 .mint-header {
-  background-color: #1e1934;
+  background-color: #f44336;
 }
 .glow-box {
-  background-color: #1e1934;
+  background-color: #f44336;
   height: 800px;
 }
 h1 {
@@ -104,7 +109,7 @@ h1 {
   font-family: "Sacramento";
   letter-spacing: 0.1em;
   color: white;
-  text-shadow: 0 0 20px black;
+  text-shadow: 0 0 20px #f44336;
   opacity: 0.8;
 }
 #glow {

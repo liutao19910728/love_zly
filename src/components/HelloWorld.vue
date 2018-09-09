@@ -1,6 +1,6 @@
 <template>
   <div>
-  <mt-header fixed title="张丽芸生日快乐"></mt-header>
+  <mt-header fixed title="芸宝生日快乐"></mt-header>
    <div class="swipe-box">
       <mt-swipe :auto="4000">
       <mt-swipe-item><img src="../assets/images/love_zly1.jpg" alt=""></mt-swipe-item>
