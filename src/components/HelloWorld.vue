@@ -38,12 +38,18 @@
 
 <script>
 export default {
+  mounted() {
+    this.play();
+  },
   data() {
     return {};
   },
   methods: {
     get_love() {
       this.$router.push({ path: "/long" });
+    },
+    play() {
+      document.getElementById("music").play();
     }
   }
 };
