@@ -4,7 +4,7 @@
                  <mt-button type="danger" @click.native="play()" >start</mt-button>
          </div> -->
     
-   <audio id="music"  src="/static/audios/hx_zcx.mp3" 
+   <audio id="music"  src="http://www.djyinyue.com/upload/music/liuxinggequ/when you say Nothing at All.mp3" 
     >
     
 </audio>
