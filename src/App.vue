@@ -1,20 +1,17 @@
 <template>
   <div id="app">
-     <!-- <div class="music_btn"  >
+    <!-- <div class="music_btn"  >
                  <mt-button type="danger" @click.native="play()" >start</mt-button>
          </div> -->
-    
-   <audio id="music"  src="http://www.djyinyue.com/upload/music/liuxinggequ/when you say Nothing at All.mp3" 
-    >
-    
-</audio>
- 
-  
-   <keep-alive>
-    <router-view v-if="$route.meta.keepAlive"></router-view>
-    </keep-alive>
-  <router-view v-if="!$route.meta.keepAlive"></router-view>
 
+    <audio id="music" src="http://www.djyinyue.com/upload/music/liuxinggequ/when you say Nothing at All.mp3">
+
+    </audio>
+
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
 
   </div>
 </template>
@@ -37,7 +34,7 @@ export default {
       // document.getElementById("music").play();
       document
         .getElementById("music")
-        .setAttribute("src", "/static/audios/hx_zcx.mp3");
+        .setAttribute("src", "http://www.djyinyue.com/upload/music/liuxinggequ/when you say Nothing at All.mp3");
 
       document.removeEventListener("touchstart", this.remove_music, false);
       document.getElementById("music").play();
@@ -74,7 +71,7 @@ export default {
       wx.ready(function() {
         document
           .getElementById("music")
-          .setAttribute("src", "/static/audios/hx_zcx.mp3");
+          .setAttribute("src", "http://www.djyinyue.com/upload/music/liuxinggequ/when you say Nothing at All.mp3");
         document.getElementById("music").play();
       });
     },
